@@ -1,0 +1,11 @@
+--- a/net/mac80211/iface.c
++++ b/net/mac80211/iface.c
+@@ -1970,7 +1970,7 @@ int ieee80211_if_add(struct ieee80211_local *local, const char *name,
+ 		ndev->min_mtu = 256;
+ #endif
+ #if LINUX_VERSION_IS_GEQ(4,10,0)
+-		ndev->max_mtu = IEEE80211_MAX_DATA_LEN;
++		ndev->max_mtu = 7920;
+ #endif
+ 
+ 		ret = register_netdevice(ndev);
