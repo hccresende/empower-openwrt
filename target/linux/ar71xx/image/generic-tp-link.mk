@@ -310,6 +310,7 @@ TARGET_DEVICES += tl-wdr3600-v1
 define Device/tl-wdr4300-v1
   $(Device/tl-wdr3600-v1)
   DEVICE_TITLE := TP-LINK TL-WDR4300 v1
+  DEVICE_PACKAGES := empower-lvap-agent openvswitch luci
   TPLINK_HWID := 0x43000001
 endef
 TARGET_DEVICES += tl-wdr4300-v1
