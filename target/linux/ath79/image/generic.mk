@@ -395,7 +395,7 @@ define Device/glinet_gl-ar300m-nor
   $(Device/glinet_gl-ar300m-common-nor)
   DEVICE_TITLE := GL.iNet GL-AR300M
 endef
-TARGET_DEVICES += glinet_gl-ar300m-nor
+#TARGET_DEVICES += glinet_gl-ar300m-nor
 
 define Device/glinet_gl-ar750s
   ATH_SOC := qca9563
@@ -404,7 +404,7 @@ define Device/glinet_gl-ar750s
   IMAGE_SIZE := 16000k
   SUPPORTED_DEVICES += gl-ar750s
 endef
-TARGET_DEVICES += glinet_gl-ar750s
+#TARGET_DEVICES += glinet_gl-ar750s
 
 define Device/glinet_gl-x750
   ATH_SOC := qca9531
@@ -632,7 +632,7 @@ define Device/netgear_wndr3700v2
   NETGEAR_BOARD_ID := WNDR3700v2
   NETGEAR_HW_ID := 29763654+16+64
   IMAGE_SIZE := 15872k
-  SUPPORTED_DEVICES += wndr3700v2
+  SUPPORTED_DEVICES += wndr3700
 endef
 TARGET_DEVICES += netgear_wndr3700v2
 
@@ -652,7 +652,7 @@ define Device/netgear_wndr3800
   NETGEAR_BOARD_ID := WNDR3800
   NETGEAR_HW_ID := 29763654+16+128
   IMAGE_SIZE := 15872k
-  SUPPORTED_DEVICES += wndr3800
+  SUPPORTED_DEVICES += wndr3700
 endef
 TARGET_DEVICES += netgear_wndr3800
 
