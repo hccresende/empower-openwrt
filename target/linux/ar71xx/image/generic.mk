@@ -462,7 +462,7 @@ define Device/gl-ar150
   BOARDNAME := GL-AR150
   IMAGE_SIZE := 16000k
   CONSOLE := ttyATH0,115200
-  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,16000k(firmware),64k(art)ro
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)ro
 endef
 TARGET_DEVICES += gl-ar150
 
@@ -516,7 +516,7 @@ define Device/gl-domino
   BOARDNAME := DOMINO
   IMAGE_SIZE := 16000k
   CONSOLE := ttyATH0,115200
-  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,16000k(firmware),64k(art)ro
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)ro
 endef
 TARGET_DEVICES += gl-domino
 
@@ -526,7 +526,7 @@ define Device/gl-mifi
   BOARDNAME := GL-MIFI
   IMAGE_SIZE := 16000k
   CONSOLE := ttyATH0,115200
-  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,16000k(firmware),64k(art)ro
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)ro
 endef
 TARGET_DEVICES += gl-mifi
 
@@ -1067,7 +1067,7 @@ define Device/NBG6616
   BOARDNAME := NBG6616
   KERNEL_SIZE := 2048k
   IMAGE_SIZE := 15323k
-  MTDPARTS := spi0.0:192k(u-boot)ro,64k(env)ro,64k(RFdata)ro,384k(zyxel_rfsd),384k(romd),64k(header),2048k(kernel),13184k(rootfs),15232k@0x120000(firmware)
+  MTDPARTS := spi0.0:192k(u-boot)ro,64k(env),64k(RFdata)ro,384k(zyxel_rfsd),384k(romd),64k(header),2048k(kernel),13184k(rootfs),15232k@0x120000(firmware)
   CMDLINE += mem=128M
   RAS_BOARD := NBG6616
   RAS_ROOTFS_SIZE := 14464k

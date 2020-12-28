@@ -103,6 +103,7 @@ define Device/avm_fritz300e
 	append-squashfs-fakeroot-be | pad-to 256 | \
 	append-rootfs | pad-rootfs | append-metadata | check-size $$$$(IMAGE_SIZE)
   DEVICE_PACKAGES := fritz-tffs rssileds -swconfig
+  SUPPORTED_DEVICES += fritz300e
 endef
 TARGET_DEVICES += avm_fritz300e
 
@@ -297,7 +298,6 @@ define Device/dlink_dir-859-a1
   IMAGE_SIZE := 15872k
   DEVICE_PACKAGES :=  kmod-usb-core kmod-usb2 kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct
   SEAMA_SIGNATURE := wrgac37_dlink.2013gui_dir859
-  SUPPORTED_DEVICES += dir-859-a1
 endef
 TARGET_DEVICES += dlink_dir-859-a1
 
